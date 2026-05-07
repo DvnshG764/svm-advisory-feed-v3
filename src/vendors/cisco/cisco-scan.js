@@ -1,5 +1,13 @@
 export function compareIncomingTopRecord(stored, advisoryId, fingerprint) {
-stored.advisoryId === advisoryId && stored.fingerprint !== fingerprint) {  if (!stored?.advisoryId || !stored?.fingerprint) {
+  if (!stored?.advisoryId || !stored?.fingerprint) {
+    return "NEW";
+  }
+
+  if (stored.advisoryId === advisoryId && stored.fingerprint === fingerprint) {
+    return "KNOWN";
+  }
+
+  if (stored.advisoryId === advisoryId && stored.fingerprint !== fingerprint) {
     return "UPDATED";
   }
 
@@ -89,11 +97,3 @@ export function scanOrderedCandidates({
     decisions
   };
 }
-
-    return "NEW";
-  }
-
-  if (stored.advisoryId === advisoryId && stored.fingerprint === fingerprint) {
-    return "KNOWN";
-  }
-
