@@ -1,0 +1,12 @@
+{
+  "lastRun": {
+    "cisco": null,
+    "paloalto": null,
+    "fortinet": null
+  },
+  "intervalMinutes": {
+    "cisco": 10,
+    "paloalto": 30,
+    "fortinet": 30
+  }
+}
