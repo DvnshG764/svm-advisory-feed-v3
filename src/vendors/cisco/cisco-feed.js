@@ -38,7 +38,8 @@ export function extractCiscoFeedItems(xmlText) {
     ignoreAttributes: false,
     attributeNamePrefix: "@_",
     textNodeName: "#text",
-    trimValues: true
+    trimValues: true,
+    processEntities: false
   });
 
   const parsed = parser.parse(xmlText);
