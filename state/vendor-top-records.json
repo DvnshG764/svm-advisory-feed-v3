@@ -1,0 +1,26 @@
+{
+  "cisco": {
+    "vendor": "cisco",
+    "advisoryId": null,
+    "fingerprint": null,
+    "publishedAt": null,
+    "updatedAt": null,
+    "processedAt": null
+  },
+  "paloalto": {
+    "vendor": "paloalto",
+    "advisoryId": null,
+    "fingerprint": null,
+    "publishedAt": null,
+    "updatedAt": null,
+    "processedAt": null
+  },
+  "fortinet": {
+    "vendor": "fortinet",
+    "advisoryId": null,
+    "fingerprint": null,
+    "publishedAt": null,
+    "updatedAt": null,
+    "processedAt": null
+  }
+}
