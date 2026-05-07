@@ -1,0 +1,77 @@
+name: SVM Advisory Feed V3
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run without sending Teams messages or updating state"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+      only_vendor:
+        description: "Vendor to run"
+        required: true
+        default: "cisco"
+        type: choice
+        options:
+          - "all"
+          - "cisco"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: svm-advisory-feed-v3
+  cancel-in-progress: false
+
+jobs:
+  run-advisory-feed:
+    name: Run advisory feed
+    runs-on: ubuntu-latest
+
+    env:
+      TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run || 'false' }}
+      ONLY_VENDOR: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.only_vendor || 'all' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run SVM advisory feed
+        run: npm start
+
+      - name: Show state file changes
+        if: always()
+        run: |
+          git status --short
+          git diff -- state/ || true
+
+      - name: Commit updated state
+        if: ${{ success() && env.DRY_RUN != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- state/ package-lock.json; then
+            echo "No state changes to commit."
+          else
+            git add state/ package-lock.json
+            git commit -m "Update advisory feed state [skip ci]"
+            git push
+          fi
