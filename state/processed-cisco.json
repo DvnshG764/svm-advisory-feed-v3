@@ -1,3 +1,88 @@
 {
-  "items": {}
+  "items": {
+    "cisco-sa-unity-rce-ssrf-hENhuASy": {
+      "advisorySlug": "cisco-sa-unity-rce-ssrf-hENhuASy",
+      "processedAt": "2026-05-07T11:38:55.213Z",
+      "cves": [
+        "CVE-2026-20034",
+        "CVE-2026-20035"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "cisco-sa-iot-fnd-dos-n8N26Q4u": {
+      "advisorySlug": "cisco-sa-iot-fnd-dos-n8N26Q4u",
+      "processedAt": "2026-05-07T11:39:30.000Z",
+      "cves": [
+        "CVE-2026-20167",
+        "CVE-2026-20168",
+        "CVE-2026-20169"
+      ],
+      "finalSelectedScore": 7.7
+    },
+    "cisco-sa-nso-dos-7Egqyc": {
+      "advisorySlug": "cisco-sa-nso-dos-7Egqyc",
+      "processedAt": "2026-05-07T11:39:37.117Z",
+      "cves": [
+        "CVE-2026-20188"
+      ],
+      "finalSelectedScore": 7.5
+    },
+    "cisco-sa-sg350-snmp-dos-GEFZr2Tj": {
+      "advisorySlug": "cisco-sa-sg350-snmp-dos-GEFZr2Tj",
+      "processedAt": "2026-05-07T11:39:44.180Z",
+      "cves": [
+        "CVE-2026-20185"
+      ],
+      "finalSelectedScore": 7.7
+    },
+    "cisco-sa-asaftd-persist-CISAED25-03": {
+      "advisorySlug": "cisco-sa-asaftd-persist-CISAED25-03",
+      "processedAt": "2026-05-07T11:39:57.675Z",
+      "cves": [
+        "CVE-2025-20333",
+        "CVE-2025-20362"
+      ],
+      "finalSelectedScore": 9.9
+    },
+    "cisco-sa-ise-rce-traversal-8bYndVrZ": {
+      "advisorySlug": "cisco-sa-ise-rce-traversal-8bYndVrZ",
+      "processedAt": "2026-05-07T11:40:05.009Z",
+      "cves": [
+        "CVE-2026-20147",
+        "CVE-2026-20148"
+      ],
+      "finalSelectedScore": 9.9
+    },
+    "cisco-sa-aci-cloudsec-enc-Vs5Wn2sX": {
+      "advisorySlug": "cisco-sa-aci-cloudsec-enc-Vs5Wn2sX",
+      "processedAt": "2026-05-07T11:40:12.094Z",
+      "cves": [
+        "CVE-2023-20185"
+      ],
+      "finalSelectedScore": 7.4
+    },
+    "cisco-sa-cimc-cmd-inj-3hKN3bVt": {
+      "advisorySlug": "cisco-sa-cimc-cmd-inj-3hKN3bVt",
+      "processedAt": "2026-05-07T11:40:25.638Z",
+      "cves": [
+        "CVE-2026-20094",
+        "CVE-2026-20095",
+        "CVE-2026-20096",
+        "CVE-2026-20097"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "cisco-sa-sdwan-authbp-qwCX8D4v": {
+      "advisorySlug": "cisco-sa-sdwan-authbp-qwCX8D4v",
+      "processedAt": "2026-05-07T11:40:32.613Z",
+      "cves": [
+        "CVE-2026-20122",
+        "CVE-2026-20126",
+        "CVE-2026-20128",
+        "CVE-2026-20129",
+        "CVE-2026-20133"
+      ],
+      "finalSelectedScore": 9.8
+    }
+  }
 }
