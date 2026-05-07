@@ -1,6 +1,6 @@
 {
   "lastRun": {
-    "cisco": null,
+    "cisco": "2026-05-07T13:12:07.178Z",
     "paloalto": null,
     "fortinet": null
   },
@@ -10,7 +10,7 @@
     "fortinet": 30
   },
   "runCounters": {
-    "cisco": 2,
+    "cisco": 3,
     "paloalto": 0,
     "fortinet": 0
   },
