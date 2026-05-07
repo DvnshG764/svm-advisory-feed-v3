@@ -1,0 +1,18 @@
+{
+  "name": "svm-advisory-feed-v3",
+  "version": "1.0.0",
+  "description": "Scheduled SVM advisory monitoring pipeline for Cisco, Palo Alto, and Fortinet with Teams notifications.",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "test:cisco": "DRY_RUN=true ONLY_VENDOR=cisco node src/main.js",
+    "run:cisco": "ONLY_VENDOR=cisco node src/main.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
