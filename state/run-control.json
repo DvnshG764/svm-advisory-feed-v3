@@ -8,5 +8,15 @@
     "cisco": 10,
     "paloalto": 30,
     "fortinet": 30
+  },
+  "runCounters": {
+    "cisco": 0,
+    "paloalto": 0,
+    "fortinet": 0
+  },
+  "forceFullScanEveryRuns": {
+    "cisco": 6,
+    "paloalto": 4,
+    "fortinet": 4
   }
 }
