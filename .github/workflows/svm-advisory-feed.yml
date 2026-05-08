@@ -1,8 +1,6 @@
 name: SVM Advisory Feed V3
 
 on:
-  schedule:
-    - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
