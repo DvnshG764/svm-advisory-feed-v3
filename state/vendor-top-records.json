@@ -1,11 +1,11 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-unity-rce-ssrf-hENhuASy",
-    "fingerprint": "580dc19726e63b149a8cf7729ad867e739e2a5f8",
-    "publishedAt": "2026-05-06",
-    "updatedAt": "2026-05-06",
-    "processedAt": "2026-05-08T10:54:16.605Z"
+    "advisoryId": null,
+    "fingerprint": null,
+    "publishedAt": null,
+    "updatedAt": null,
+    "processedAt": null
   },
   "paloalto": {
     "vendor": "paloalto",
