@@ -141,6 +141,10 @@ const CISCO_OS_RULES = [
   {
     label: "Cisco Network Services Orchestrator (NSO)",
     patterns: [/\bnetwork services orchestrator\b/i, /\bcisco nso\b/i]
+  },
+  {
+    label: "Cisco CloudSec",
+    patterns: [/\bcloudsec\b/i]
   }
 ];
 
