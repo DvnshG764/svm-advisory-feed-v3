@@ -20,12 +20,13 @@ export const CONFIG = {
     },
 
     fortinet: {
-      vendorName: "Fortinet",
-      vendorKey: "fortinet",
-      feedUrl: null,
-      maxRecordsToCheck: 7,
-      processedStatePath: "state/processed-fortinet.json"
-    }
+    vendorName: "Fortinet",
+    vendorKey: "fortinet",
+    feedUrl:
+    "https://www.fortiguard.com/psirt?filter=1&product=FortiOS-6K7K%2CFortiOS&product=FortiSwitchManager&product=FortiSwitch&product=FortiSwitchAXFixed&product=FortiAP&product=FortiAP-U&product=FortiAP-W2&product=FortiAP-C&product=FortiAP-S&product=FortiManager&product=FortiAnalyzer&product=FortiManager+Cloud&product=FortiAnalyzer-BigData&product=FortiAnalyzer+Cloud&product=FortiWeb&product=FortiWebManager&product=FortiSandbox&product=FortiExtender&product=FortiSandbox+PaaS&product=FortiSandbox+Cloud&version=&severity=5&severity=4&keyword=",
+    maxRecordsToCheck: 7,
+    processedStatePath: "state/processed-fortinet.json"
+}
   },
 
   paths: {
