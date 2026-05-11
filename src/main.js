@@ -8,6 +8,7 @@ import {
 } from "./shared/state.js";
 
 import { runCiscoPipeline } from "./vendors/cisco/cisco-runner.js";
+import { runPaloAltoPipeline } from "./vendors/paloalto/paloalto-runner.js";
 
 function parseBoolean(value, defaultValue = false) {
   if (value == null || value === "") {
@@ -37,6 +38,94 @@ function isManualWorkflowRun() {
 
 function shouldIncludeVendor(onlyVendor, vendorKey) {
   return onlyVendor === "all" || onlyVendor === vendorKey;
+}
+
+async function runCisco({
+  dryRun,
+  runControl,
+  overallSummary
+}) {
+  const vendorKey = "cisco";
+
+  /*
+   * Cisco requirement:
+   * Cisco runs every external cron trigger.
+   *
+   * Current cron-job.org interval = 15 minutes.
+   * Therefore Cisco currently runs every 15 minutes.
+   */
+  const forceFullScan = shouldForceFullScan(runControl, vendorKey);
+
+  const ciscoSummary = await runCiscoPipeline({
+    dryRun,
+    forceFullScan
+  });
+
+  overallSummary.vendors.cisco = ciscoSummary;
+
+  if (!dryRun) {
+    return updateRunControlAfterVendorRun(
+      runControl,
+      vendorKey,
+      new Date()
+    );
+  }
+
+  return runControl;
+}
+
+async function runPaloAlto({
+  dryRun,
+  runControl,
+  overallSummary,
+  manualRun,
+  onlyVendor
+}) {
+  const vendorKey = "paloalto";
+
+  /*
+   * Palo Alto requirement:
+   * Palo Alto should run every 30 minutes.
+   *
+   * Since cron-job.org triggers every 15 minutes, Palo Alto will run roughly
+   * every second GitHub Actions run.
+   *
+   * Manual vendor-specific runs should execute immediately for testing.
+   */
+  const vendorSpecificManualRun = manualRun && onlyVendor === vendorKey;
+
+  const shouldRunPaloAlto =
+    vendorSpecificManualRun || shouldRunVendor(runControl, vendorKey, new Date());
+
+  if (!shouldRunPaloAlto) {
+    logInfo("Skipping Palo Alto because interval has not elapsed", {
+      vendorKey,
+      intervalMinutes: runControl.intervalMinutes?.[vendorKey],
+      lastRun: runControl.lastRun?.[vendorKey] || null
+    });
+
+    overallSummary.skipped.paloalto = "INTERVAL_NOT_ELAPSED";
+    return runControl;
+  }
+
+  const forceFullScan = shouldForceFullScan(runControl, vendorKey);
+
+  const paloAltoSummary = await runPaloAltoPipeline({
+    dryRun,
+    forceFullScan
+  });
+
+  overallSummary.vendors.paloalto = paloAltoSummary;
+
+  if (!dryRun) {
+    return updateRunControlAfterVendorRun(
+      runControl,
+      vendorKey,
+      new Date()
+    );
+  }
+
+  return runControl;
 }
 
 async function run() {
@@ -69,39 +158,11 @@ async function run() {
 
   if (shouldIncludeVendor(onlyVendor, "cisco")) {
     try {
-      const vendorKey = "cisco";
-
-      /*
-       * Cisco requirement:
-       * The GitHub workflow runs every 10 minutes, and Cisco should run on every scheduled trigger.
-       *
-       * For manual runs, we also allow Cisco to run immediately for testing.
-       *
-       * For Palo Alto/Fortinet later, we will use shouldRunVendor() to enforce 30-minute intervals.
-       */
-      const shouldRunCisco = true;
-
-      if (!shouldRunCisco) {
-        logInfo("Skipping Cisco because interval has not elapsed");
-        overallSummary.skipped.cisco = "INTERVAL_NOT_ELAPSED";
-      } else {
-        const forceFullScan = shouldForceFullScan(runControl, vendorKey);
-
-        const ciscoSummary = await runCiscoPipeline({
-          dryRun,
-          forceFullScan
-        });
-
-        overallSummary.vendors.cisco = ciscoSummary;
-
-        if (!dryRun) {
-          runControl = updateRunControlAfterVendorRun(
-            runControl,
-            vendorKey,
-            new Date()
-          );
-        }
-      }
+      runControl = await runCisco({
+        dryRun,
+        runControl,
+        overallSummary
+      });
     } catch (err) {
       logError("Cisco pipeline failed", err);
       overallSummary.errors++;
@@ -113,24 +174,30 @@ async function run() {
     overallSummary.skipped.cisco = "NOT_SELECTED";
   }
 
-  /*
-   * Placeholders for later phases:
-   * Palo Alto and Fortinet will use:
-   *
-   * if (shouldRunVendor(runControl, "paloalto")) { ... }
-   * if (shouldRunVendor(runControl, "fortinet")) { ... }
-   *
-   * This allows one workflow every 10 minutes while Palo/Fortinet run every 30 minutes.
-   */
   if (shouldIncludeVendor(onlyVendor, "paloalto")) {
-    if (!shouldRunVendor(runControl, "paloalto", new Date()) && !manualRun) {
-      overallSummary.skipped.paloalto = "INTERVAL_NOT_ELAPSED";
-    } else {
-      overallSummary.skipped.paloalto = "NOT_IMPLEMENTED_YET";
-      logWarn("Palo Alto pipeline is not implemented yet");
+    try {
+      runControl = await runPaloAlto({
+        dryRun,
+        runControl,
+        overallSummary,
+        manualRun,
+        onlyVendor
+      });
+    } catch (err) {
+      logError("Palo Alto pipeline failed", err);
+      overallSummary.errors++;
     }
+  } else {
+    logInfo("Palo Alto not selected by ONLY_VENDOR", {
+      onlyVendor
+    });
+    overallSummary.skipped.paloalto = "NOT_SELECTED";
   }
 
+  /*
+   * Placeholder for Fortinet phase.
+   * Fortinet will later use the same 30-minute interval structure as Palo Alto.
+   */
   if (shouldIncludeVendor(onlyVendor, "fortinet")) {
     if (!shouldRunVendor(runControl, "fortinet", new Date()) && !manualRun) {
       overallSummary.skipped.fortinet = "INTERVAL_NOT_ELAPSED";
@@ -138,6 +205,11 @@ async function run() {
       overallSummary.skipped.fortinet = "NOT_IMPLEMENTED_YET";
       logWarn("Fortinet pipeline is not implemented yet");
     }
+  } else {
+    logInfo("Fortinet not selected by ONLY_VENDOR", {
+      onlyVendor
+    });
+    overallSummary.skipped.fortinet = "NOT_SELECTED";
   }
 
   if (!dryRun) {
