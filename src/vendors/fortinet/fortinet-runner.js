@@ -48,6 +48,9 @@ export async function runFortinetPipeline({
     messages: []
   };
 
+
+  let hadFetchFailure = false;
+  
   logInfo("Starting Fortinet pipeline", {
     dryRun,
     forceFullScan,
@@ -103,6 +106,16 @@ export async function runFortinetPipeline({
       continue;
     }
 
+
+    if (isProcessed(processedState, fgId)) {
+      logInfo("Skipping already processed Fortinet advisory", {
+        advisorySlug: fgId
+      });
+    
+      summary.alreadyProcessed++;
+      continue;
+    }
+    
     let record;
 
     try {
@@ -110,6 +123,7 @@ export async function runFortinetPipeline({
     } catch (err) {
       logError("Failed to build Fortinet unified record", err);
       summary.fetchFailed++;
+      hadFetchFailure = true;
       continue;
     }
 
@@ -194,26 +208,31 @@ export async function runFortinetPipeline({
   }
 
   if (!dryRun) {
-    await saveProcessedState(
-      CONFIG.vendors.fortinet.processedStatePath,
-      processedState
+  await saveProcessedState(
+    CONFIG.vendors.fortinet.processedStatePath,
+    processedState
+  );
+
+  if (candidates.length && !hadFetchFailure) {
+    const nextVendorTopRecords = commitTopRecord(
+      vendorTopRecords,
+      vendorKey,
+      candidates[0]
     );
 
-    if (candidates.length) {
-      const nextVendorTopRecords = commitTopRecord(
-        vendorTopRecords,
-        vendorKey,
-        candidates[0]
-      );
+    await saveVendorTopRecords(nextVendorTopRecords);
 
-      await saveVendorTopRecords(nextVendorTopRecords);
-
-      logInfo("Committed Fortinet top record", {
-        advisoryId: candidates[0].advisoryId,
-        fingerprint: candidates[0].fingerprint
-      });
-    }
+    logInfo("Committed Fortinet top record", {
+      advisoryId: candidates[0].advisoryId,
+      fingerprint: candidates[0].fingerprint
+    });
+  } else if (hadFetchFailure) {
+    logWarn("Skipped Fortinet top-record commit because one or more advisory fetches failed", {
+      topCandidate: candidates[0] || null,
+      fetchFailed: summary.fetchFailed
+    });
   }
+}
 
   logInfo("Fortinet pipeline completed", summary);
 
