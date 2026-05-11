@@ -1,26 +1,26 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-unity-rce-ssrf-hENhuASy",
-    "fingerprint": "580dc19726e63b149a8cf7729ad867e739e2a5f8",
-    "publishedAt": "2026-05-06",
-    "updatedAt": "2026-05-06",
-    "processedAt": "2026-05-11T09:30:22.950Z"
+    "advisoryId": null,
+    "fingerprint": null,
+    "publishedAt": null,
+    "updatedAt": null,
+    "processedAt": null
   },
   "paloalto": {
     "vendor": "paloalto",
-    "advisoryId": "CVE-2026-0300",
-    "fingerprint": "0e6d80d1e350767fbadf10957445f51cd56b6d9c",
-    "publishedAt": "2026-05-07",
-    "updatedAt": "2026-05-07",
-    "processedAt": "2026-05-11T09:56:26.068Z"
+    "advisoryId": null,
+    "fingerprint": null,
+    "publishedAt": null,
+    "updatedAt": null,
+    "processedAt": null
   },
   "fortinet": {
     "vendor": "fortinet",
-    "advisoryId": "FG-IR-26-121",
-    "fingerprint": "9091fb79f3f82d807270e26fd7e4ba9f50f1ed32",
+    "advisoryId": null,
+    "fingerprint": null,
     "publishedAt": null,
     "updatedAt": null,
-    "processedAt": "2026-05-11T10:19:16.975Z"
+    "processedAt": null
   }
 }
