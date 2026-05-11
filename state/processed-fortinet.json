@@ -1,4 +1,60 @@
 {
   "items": {
+    "FG-IR-26-121": {
+      "advisorySlug": "FG-IR-26-121",
+      "processedAt": "2026-05-11T10:47:56.115Z",
+      "cves": [
+        "CVE-2026-22828"
+      ],
+      "finalSelectedScore": 8.1
+    },
+    "FG-IR-26-100": {
+      "advisorySlug": "FG-IR-26-100",
+      "processedAt": "2026-05-11T10:48:03.378Z",
+      "cves": [
+        "CVE-2026-39808"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-112": {
+      "advisorySlug": "FG-IR-26-112",
+      "processedAt": "2026-05-11T10:48:10.391Z",
+      "cves": [
+        "CVE-2026-39813"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-076": {
+      "advisorySlug": "FG-IR-26-076",
+      "processedAt": "2026-05-11T10:48:17.301Z",
+      "cves": [
+        "CVE-2025-15467"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-082": {
+      "advisorySlug": "FG-IR-26-082",
+      "processedAt": "2026-05-11T10:48:24.213Z",
+      "cves": [
+        "CVE-2026-24017"
+      ],
+      "finalSelectedScore": 8.1
+    },
+    "FG-IR-26-086": {
+      "advisorySlug": "FG-IR-26-086",
+      "processedAt": "2026-05-11T10:48:31.343Z",
+      "cves": [
+        "CVE-2026-22627"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "FG-IR-26-098": {
+      "advisorySlug": "FG-IR-26-098",
+      "processedAt": "2026-05-11T10:48:38.197Z",
+      "cves": [
+        "CVE-2025-54820"
+      ],
+      "finalSelectedScore": 8.1
+    }
   }
 }
