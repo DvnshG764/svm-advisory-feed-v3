@@ -86,7 +86,7 @@ export function shouldSendPaloAltoRecord(record) {
 export async function buildPaloAltoUnifiedRecord(feedItem) {
   const advisorySlug = advisorySlugFromPaloAltoUrl(feedItem.advisoryLink);
 
-  const advisoryPage = await fetchTextWithRetry(feedItem.advisoryLink, 3, 1500);
+  const advisoryPage = await fetchTextWithRetry(feedItem.advisoryLink, 5, 1500);
 
   if (advisoryPage.status < 200 || advisoryPage.status >= 300) {
     throw new Error(
