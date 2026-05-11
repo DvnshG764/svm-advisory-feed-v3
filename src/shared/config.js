@@ -9,6 +9,22 @@ export const CONFIG = {
         "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
       maxRecordsToCheck: 15,
       processedStatePath: "state/processed-cisco.json"
+    },
+
+    paloalto: {
+      vendorName: "Palo Alto",
+      vendorKey: "paloalto",
+      feedUrl: "https://security.paloaltonetworks.com/rss.xml",
+      maxRecordsToCheck: 5,
+      processedStatePath: "state/processed-paloalto.json"
+    },
+
+    fortinet: {
+      vendorName: "Fortinet",
+      vendorKey: "fortinet",
+      feedUrl: null,
+      maxRecordsToCheck: 5,
+      processedStatePath: "state/processed-fortinet.json"
     }
   },
 
@@ -23,7 +39,11 @@ export const CONFIG = {
     cacheMaxAgeDays: 7
   },
 
-  processedRetentionDays: 30,
+  /*
+   * Processed advisory state should persist forever for all vendors.
+   * Number.POSITIVE_INFINITY means pruneProcessedState() will not delete old records.
+   */
+  processedRetentionDays: Number.POSITIVE_INFINITY,
 
   teams: {
     webhookUrlEnvName: "TEAMS_WEBHOOK_URL"
