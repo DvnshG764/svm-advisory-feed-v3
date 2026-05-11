@@ -19,7 +19,7 @@ on:
         options:
           - "all"
           - "cisco"
-          - "palo alto"
+          - "paloalto"
 
 permissions:
   contents: write
