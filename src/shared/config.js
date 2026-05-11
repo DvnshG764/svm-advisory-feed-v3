@@ -15,7 +15,7 @@ export const CONFIG = {
       vendorName: "Palo Alto",
       vendorKey: "paloalto",
       feedUrl: "https://security.paloaltonetworks.com/rss.xml",
-      maxRecordsToCheck: 5,
+      maxRecordsToCheck: 7,
       processedStatePath: "state/processed-paloalto.json"
     },
 
@@ -23,7 +23,7 @@ export const CONFIG = {
       vendorName: "Fortinet",
       vendorKey: "fortinet",
       feedUrl: null,
-      maxRecordsToCheck: 5,
+      maxRecordsToCheck: 7,
       processedStatePath: "state/processed-fortinet.json"
     }
   },
