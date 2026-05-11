@@ -116,7 +116,7 @@ export function shouldSendFortinetRecord(record) {
 export async function buildFortinetUnifiedRecord(fgId) {
   const advisoryLink = buildFortinetAdvisoryUrl(fgId);
 
-  const advisoryPage = await fetchTextWithRetry(advisoryLink, 3, 1500);
+  const advisoryPage = await fetchTextWithRetry(advisoryLink, 5, 1500);
 
   if (advisoryPage.status < 200 || advisoryPage.status >= 300) {
     throw new Error(
