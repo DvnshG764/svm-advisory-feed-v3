@@ -9,6 +9,7 @@ import {
 
 import { runCiscoPipeline } from "./vendors/cisco/cisco-runner.js";
 import { runPaloAltoPipeline } from "./vendors/paloalto/paloalto-runner.js";
+import { runFortinetPipeline } from "./vendors/fortinet/fortinet-runner.js";
 
 function parseBoolean(value, defaultValue = false) {
   if (value == null || value === "") {
@@ -73,6 +74,53 @@ async function runCisco({
 
   return runControl;
 }
+//-------------------------
+
+async function runFortinet({
+  dryRun,
+  runControl,
+  overallSummary,
+  manualRun,
+  onlyVendor
+}) {
+  const vendorKey = "fortinet";
+
+  const vendorSpecificManualRun = manualRun && onlyVendor === vendorKey;
+
+  const shouldRunFortinet =
+    vendorSpecificManualRun || shouldRunVendor(runControl, vendorKey, new Date());
+
+  if (!shouldRunFortinet) {
+    logInfo("Skipping Fortinet because interval has not elapsed", {
+      vendorKey,
+      intervalMinutes: runControl.intervalMinutes?.[vendorKey],
+      lastRun: runControl.lastRun?.[vendorKey] || null
+    });
+
+    overallSummary.skipped.fortinet = "INTERVAL_NOT_ELAPSED";
+    return runControl;
+  }
+
+  const forceFullScan = shouldForceFullScan(runControl, vendorKey);
+
+  const fortinetSummary = await runFortinetPipeline({
+    dryRun,
+    forceFullScan
+  });
+
+  overallSummary.vendors.fortinet = fortinetSummary;
+
+  if (!dryRun) {
+    return updateRunControlAfterVendorRun(
+      runControl,
+      vendorKey,
+      new Date()
+    );
+  }
+
+  return runControl;
+}
+//------------------------
 
 async function runPaloAlto({
   dryRun,
@@ -194,16 +242,18 @@ async function run() {
     overallSummary.skipped.paloalto = "NOT_SELECTED";
   }
 
-  /*
-   * Placeholder for Fortinet phase.
-   * Fortinet will later use the same 30-minute interval structure as Palo Alto.
-   */
   if (shouldIncludeVendor(onlyVendor, "fortinet")) {
-    if (!shouldRunVendor(runControl, "fortinet", new Date()) && !manualRun) {
-      overallSummary.skipped.fortinet = "INTERVAL_NOT_ELAPSED";
-    } else {
-      overallSummary.skipped.fortinet = "NOT_IMPLEMENTED_YET";
-      logWarn("Fortinet pipeline is not implemented yet");
+    try {
+      runControl = await runFortinet({
+        dryRun,
+        runControl,
+        overallSummary,
+        manualRun,
+        onlyVendor
+      });
+    } catch (err) {
+      logError("Fortinet pipeline failed", err);
+      overallSummary.errors++;
     }
   } else {
     logInfo("Fortinet not selected by ONLY_VENDOR", {
