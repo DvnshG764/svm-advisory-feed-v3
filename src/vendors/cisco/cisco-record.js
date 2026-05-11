@@ -66,7 +66,7 @@ export function shouldSendCiscoRecord(record) {
 export async function buildCiscoUnifiedRecord(feedItem) {
   const advisorySlug = advisorySlugFromUrl(feedItem.advisoryLink);
 
-  const advisoryPage = await fetchTextWithRetry(feedItem.advisoryLink, 3, 1500);
+  const advisoryPage = await fetchTextWithRetry(feedItem.advisoryLink, 5, 1500);
 
   if (advisoryPage.status < 200 || advisoryPage.status >= 300) {
     throw new Error(
