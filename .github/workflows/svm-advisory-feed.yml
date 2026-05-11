@@ -14,11 +14,12 @@ on:
       only_vendor:
         description: "Vendor to run"
         required: true
-        default: "cisco"
+        default: "all"
         type: choice
         options:
           - "all"
           - "cisco"
+          - "palo alto"
 
 permissions:
   contents: write
