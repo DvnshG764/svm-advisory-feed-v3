@@ -9,11 +9,11 @@
   },
   "paloalto": {
     "vendor": "paloalto",
-    "advisoryId": null,
-    "fingerprint": null,
-    "publishedAt": null,
-    "updatedAt": null,
-    "processedAt": null
+    "advisoryId": "CVE-2026-0300",
+    "fingerprint": "0e6d80d1e350767fbadf10957445f51cd56b6d9c",
+    "publishedAt": "2026-05-07",
+    "updatedAt": "2026-05-07",
+    "processedAt": "2026-05-11T09:56:26.068Z"
   },
   "fortinet": {
     "vendor": "fortinet",

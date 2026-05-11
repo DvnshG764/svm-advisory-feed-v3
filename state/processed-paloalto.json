@@ -1,3 +1,34 @@
 {
-  "items": {}
+  "items": {
+    "CVE-2026-0300": {
+      "advisorySlug": "CVE-2026-0300",
+      "processedAt": "2026-05-11T09:55:58.308Z",
+      "cves": [
+        "CVE-2026-0300"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "CVE-2026-0234": {
+      "advisorySlug": "CVE-2026-0234",
+      "processedAt": "2026-05-11T09:56:11.810Z",
+      "cves": [
+        "CVE-2026-0234"
+      ],
+      "finalSelectedScore": 7.2
+    },
+    "PAN-SA-2026-0006": {
+      "advisorySlug": "PAN-SA-2026-0006",
+      "processedAt": "2026-05-11T09:56:26.066Z",
+      "cves": [
+        "CVE-2023-2176",
+        "CVE-2023-5633",
+        "CVE-2023-28464",
+        "CVE-2024-0646",
+        "CVE-2024-36971",
+        "CVE-2024-36886",
+        "CVE-2025-57052"
+      ],
+      "finalSelectedScore": 7.8
+    }
+  }
 }
