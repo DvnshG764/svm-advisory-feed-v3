@@ -5,7 +5,7 @@
     "fortinet": null
   },
   "intervalMinutes": {
-    "cisco": 10,
+    "cisco": 15,
     "paloalto": 30,
     "fortinet": 30
   },
