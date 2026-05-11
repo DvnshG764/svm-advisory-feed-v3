@@ -16,7 +16,7 @@
   },
   "forceFullScanEveryRuns": {
     "cisco": 6,
-    "paloalto": 4,
-    "fortinet": 4
+    "paloalto": 10,
+    "fortinet": 20
   }
 }
