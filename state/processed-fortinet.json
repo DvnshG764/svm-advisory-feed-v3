@@ -55,6 +55,22 @@
         "CVE-2025-54820"
       ],
       "finalSelectedScore": 8.1
+    },
+    "FG-IR-26-136": {
+      "advisorySlug": "FG-IR-26-136",
+      "processedAt": "2026-05-12T17:05:54.657Z",
+      "cves": [
+        "CVE-2026-26083"
+      ],
+      "finalSelectedScore": 9.1
+    },
+    "FG-IR-26-123": {
+      "advisorySlug": "FG-IR-26-123",
+      "processedAt": "2026-05-12T17:06:02.178Z",
+      "cves": [
+        "CVE-2025-53844"
+      ],
+      "finalSelectedScore": 8.3
     }
   }
 }
