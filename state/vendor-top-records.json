@@ -5,7 +5,7 @@
     "fingerprint": "580dc19726e63b149a8cf7729ad867e739e2a5f8",
     "publishedAt": "2026-05-06",
     "updatedAt": "2026-05-06",
-    "processedAt": "2026-05-11T23:45:15.636Z"
+    "processedAt": "2026-05-12T00:03:36.903Z"
   },
   "paloalto": {
     "vendor": "paloalto",
@@ -21,6 +21,6 @@
     "fingerprint": "9091fb79f3f82d807270e26fd7e4ba9f50f1ed32",
     "publishedAt": null,
     "updatedAt": null,
-    "processedAt": "2026-05-11T23:15:22.565Z"
+    "processedAt": "2026-05-12T00:03:39.907Z"
   }
 }
