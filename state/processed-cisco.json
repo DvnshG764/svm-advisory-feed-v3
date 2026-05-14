@@ -83,6 +83,24 @@
         "CVE-2026-20133"
       ],
       "finalSelectedScore": 9.8
+    },
+    "cisco-sa-sdwan-rpa2-v69WY2SW": {
+      "advisorySlug": "cisco-sa-sdwan-rpa2-v69WY2SW",
+      "processedAt": "2026-05-14T16:00:49.359Z",
+      "cves": [
+        "CVE-2026-20182"
+      ],
+      "finalSelectedScore": 10
+    },
+    "cisco-sa-sdwan-mltvnps2-JxpWm7R": {
+      "advisorySlug": "cisco-sa-sdwan-mltvnps2-JxpWm7R",
+      "processedAt": "2026-05-14T16:00:59.934Z",
+      "cves": [
+        "CVE-2026-20209",
+        "CVE-2026-20210",
+        "CVE-2026-20224"
+      ],
+      "finalSelectedScore": 8.6
     }
   }
 }
