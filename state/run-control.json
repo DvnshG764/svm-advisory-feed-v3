@@ -6,8 +6,8 @@
   },
   "intervalMinutes": {
     "cisco": 15,
-    "paloalto": 30,
-    "fortinet": 30
+    "paloalto": 15,
+    "fortinet": 15
   },
   "runCounters": {
     "cisco": 282,
@@ -15,8 +15,8 @@
     "fortinet": 105
   },
   "forceFullScanEveryRuns": {
-    "cisco": 6,
+    "cisco": 5,
     "paloalto": 10,
-    "fortinet": 20
+    "fortinet": 10
   }
 }
