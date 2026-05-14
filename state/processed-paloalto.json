@@ -163,6 +163,14 @@
         "CVE-2026-0235"
       ],
       "finalSelectedScore": 8.8
+    },
+    "CVE-2026-0264": {
+      "advisorySlug": "CVE-2026-0264",
+      "processedAt": "2026-05-14T19:31:24.849Z",
+      "cves": [
+        "CVE-2026-0264"
+      ],
+      "finalSelectedScore": 7.2
     }
   }
 }

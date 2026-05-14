@@ -5,15 +5,15 @@
     "fingerprint": "2b99062cbcb0d321f30ea1dc419832c38ce9ca28",
     "publishedAt": "2026-05-14",
     "updatedAt": "2026-05-14",
-    "processedAt": "2026-05-14T19:15:16.997Z"
+    "processedAt": "2026-05-14T19:30:26.616Z"
   },
   "paloalto": {
     "vendor": "paloalto",
-    "advisoryId": "CVE-2026-0242",
-    "fingerprint": "fab02d1f2ee83280c13af1f2eb24bccd5500b340",
-    "publishedAt": "2026-05-13",
-    "updatedAt": "2026-05-13",
-    "processedAt": "2026-05-14T19:15:17.108Z"
+    "advisoryId": "CVE-2026-0256",
+    "fingerprint": "7549fb1ca2d9dfa030f5a463948bcf58b33cd9a3",
+    "publishedAt": "2026-05-14",
+    "updatedAt": "2026-05-14",
+    "processedAt": "2026-05-14T19:31:31.383Z"
   },
   "fortinet": {
     "vendor": "fortinet",
@@ -21,6 +21,6 @@
     "fingerprint": "4c9c1ceba38d5ae6bc08442268fff88c6e5cccab",
     "publishedAt": null,
     "updatedAt": null,
-    "processedAt": "2026-05-14T19:15:18.255Z"
+    "processedAt": "2026-05-14T19:31:32.492Z"
   }
 }
