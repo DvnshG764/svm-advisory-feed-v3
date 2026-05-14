@@ -5,15 +5,15 @@
     "fingerprint": "580dc19726e63b149a8cf7729ad867e739e2a5f8",
     "publishedAt": "2026-05-06",
     "updatedAt": "2026-05-06",
-    "processedAt": "2026-05-14T03:03:08.169Z"
+    "processedAt": "2026-05-14T03:15:23.495Z"
   },
   "paloalto": {
     "vendor": "paloalto",
-    "advisoryId": "PAN-SA-2026-0007",
-    "fingerprint": "dca0213375fd9cba12aa4c4b36ec6760ccec1e19",
+    "advisoryId": "CVE-2026-0242",
+    "fingerprint": "fab02d1f2ee83280c13af1f2eb24bccd5500b340",
     "publishedAt": "2026-05-13",
     "updatedAt": "2026-05-13",
-    "processedAt": "2026-05-14T02:45:22.486Z"
+    "processedAt": "2026-05-14T03:16:35.741Z"
   },
   "fortinet": {
     "vendor": "fortinet",
