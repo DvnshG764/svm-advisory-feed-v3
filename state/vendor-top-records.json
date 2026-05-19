@@ -1,11 +1,11 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-sdwan-rpa2-v69WY2SW",
-    "fingerprint": "2b99062cbcb0d321f30ea1dc419832c38ce9ca28",
-    "publishedAt": "2026-05-14",
-    "updatedAt": "2026-05-14",
-    "processedAt": "2026-05-19T17:47:00.129Z"
+    "advisoryId": "cisco-sa-asaftd-persist-CISAED25-03",
+    "fingerprint": "478b12118bdfba9f2ec9cca50bf72c48a6f48a6c",
+    "publishedAt": "2026-05-19",
+    "updatedAt": "2026-05-19",
+    "processedAt": "2026-05-19T18:00:46.829Z"
   },
   "paloalto": {
     "vendor": "paloalto",
