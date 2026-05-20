@@ -101,6 +101,14 @@
         "CVE-2026-20224"
       ],
       "finalSelectedScore": 8.6
+    },
+    "cisco-sa-csw-pnbsa-g8WEnuy": {
+      "advisorySlug": "cisco-sa-csw-pnbsa-g8WEnuy",
+      "processedAt": "2026-05-20T16:00:54.127Z",
+      "cves": [
+        "CVE-2026-20223"
+      ],
+      "finalSelectedScore": 10
     }
   }
 }

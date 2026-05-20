@@ -1,11 +1,11 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-asaftd-persist-CISAED25-03",
-    "fingerprint": "478b12118bdfba9f2ec9cca50bf72c48a6f48a6c",
-    "publishedAt": "2026-05-19",
-    "updatedAt": "2026-05-19",
-    "processedAt": "2026-05-20T15:45:22.605Z"
+    "advisoryId": "cisco-sa-bgp-iefab-3hb2pwtx",
+    "fingerprint": "6e6b6256e02ed7b817ee00634f8838fb83161a50",
+    "publishedAt": "2026-05-20",
+    "updatedAt": "2026-05-20",
+    "processedAt": "2026-05-20T16:01:19.517Z"
   },
   "paloalto": {
     "vendor": "paloalto",
@@ -13,7 +13,7 @@
     "fingerprint": "ccf1f578dc596964a5b02a20fb2533b0f79f9eff",
     "publishedAt": "2026-05-19",
     "updatedAt": "2026-05-19",
-    "processedAt": "2026-05-20T15:45:22.794Z"
+    "processedAt": "2026-05-20T16:02:08.561Z"
   },
   "fortinet": {
     "vendor": "fortinet",
@@ -21,6 +21,6 @@
     "fingerprint": "4c9c1ceba38d5ae6bc08442268fff88c6e5cccab",
     "publishedAt": null,
     "updatedAt": null,
-    "processedAt": "2026-05-20T15:45:23.630Z"
+    "processedAt": "2026-05-20T16:02:50.563Z"
   }
 }
