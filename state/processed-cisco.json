@@ -109,6 +109,14 @@
         "CVE-2026-20223"
       ],
       "finalSelectedScore": 10
+    },
+    "cisco-sa-cucm-ssrf-cXPnHcW": {
+      "advisorySlug": "cisco-sa-cucm-ssrf-cXPnHcW",
+      "processedAt": "2026-06-03T16:15:51.997Z",
+      "cves": [
+        "CVE-2026-20230"
+      ],
+      "finalSelectedScore": 8.6
     }
   }
 }
