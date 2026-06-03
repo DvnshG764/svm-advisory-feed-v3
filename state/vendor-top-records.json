@@ -5,7 +5,7 @@
     "fingerprint": "da4c55287d077e5c6f552c9d06edac1714b20f7a",
     "publishedAt": "2026-05-27",
     "updatedAt": "2026-05-27",
-    "processedAt": "2026-06-03T00:15:23.399Z"
+    "processedAt": "2026-06-03T00:30:27.625Z"
   },
   "paloalto": {
     "vendor": "paloalto",
@@ -13,7 +13,7 @@
     "fingerprint": "092ccbf29c11114b984b622751126de6df42047e",
     "publishedAt": "2026-06-02",
     "updatedAt": "2026-06-02",
-    "processedAt": "2026-06-03T00:15:23.490Z"
+    "processedAt": "2026-06-03T00:30:27.724Z"
   },
   "fortinet": {
     "vendor": "fortinet",
@@ -21,6 +21,6 @@
     "fingerprint": "4c9c1ceba38d5ae6bc08442268fff88c6e5cccab",
     "publishedAt": null,
     "updatedAt": null,
-    "processedAt": "2026-06-03T00:15:24.135Z"
+    "processedAt": "2026-06-03T00:30:28.166Z"
   }
 }
