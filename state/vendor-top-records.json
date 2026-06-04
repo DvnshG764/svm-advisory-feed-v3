@@ -1,11 +1,11 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-webex-xss-jw3NeQzS",
-    "fingerprint": "23cec81b7e43799305f438b56eefe8752be31b4c",
-    "publishedAt": "2026-06-03",
-    "updatedAt": "2026-06-03",
-    "processedAt": "2026-06-04T22:15:22.058Z"
+    "advisoryId": "cisco-sa-sdwan-privesc-4uxFrdzx",
+    "fingerprint": "dbdbff901bdb8d2db895e5861399c1c067126227",
+    "publishedAt": "2026-06-04",
+    "updatedAt": "2026-06-04",
+    "processedAt": "2026-06-04T22:31:57.684Z"
   },
   "paloalto": {
     "vendor": "paloalto",
@@ -13,7 +13,7 @@
     "fingerprint": "82c62ea15d383e5837b749ed7534987515e9a793",
     "publishedAt": "2026-06-03",
     "updatedAt": "2026-06-03",
-    "processedAt": "2026-06-04T22:00:30.604Z"
+    "processedAt": "2026-06-04T22:31:57.771Z"
   },
   "fortinet": {
     "vendor": "fortinet",
@@ -21,6 +21,6 @@
     "fingerprint": "4c9c1ceba38d5ae6bc08442268fff88c6e5cccab",
     "publishedAt": null,
     "updatedAt": null,
-    "processedAt": "2026-06-04T22:00:31.509Z"
+    "processedAt": "2026-06-04T22:31:58.394Z"
   }
 }
