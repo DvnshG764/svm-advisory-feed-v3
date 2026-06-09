@@ -79,6 +79,14 @@
         "CVE-2025-25249"
       ],
       "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-141": {
+      "advisorySlug": "FG-IR-26-141",
+      "processedAt": "2026-06-09T16:03:09.501Z",
+      "cves": [
+        "CVE-2026-25089"
+      ],
+      "finalSelectedScore": 9.1
     }
   }
 }
