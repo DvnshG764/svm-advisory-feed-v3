@@ -446,6 +446,14 @@
         "CVE-2026-10022"
       ],
       "finalSelectedScore": 8.8
+    },
+    "CVE-2026-0274": {
+      "advisorySlug": "CVE-2026-0274",
+      "processedAt": "2026-06-10T16:45:43.256Z",
+      "cves": [
+        "CVE-2026-0274"
+      ],
+      "finalSelectedScore": 8.1
     }
   }
 }
