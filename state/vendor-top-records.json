@@ -1,11 +1,11 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-sdwan-privesc-4uxFrdzx",
-    "fingerprint": "11c9c3033807fae1a8886b1dd685560297e8aad0",
-    "publishedAt": "2026-06-12",
-    "updatedAt": "2026-06-12",
-    "processedAt": "2026-06-15T16:00:45.632Z"
+    "advisoryId": "cisco-sa-sdwan-arbfw-c2rZvQ",
+    "fingerprint": "4ff051707412cdbecba9c029b0cd687fa289deba",
+    "publishedAt": "2026-06-15",
+    "updatedAt": "2026-06-15",
+    "processedAt": "2026-06-15T16:15:45.704Z"
   },
   "paloalto": {
     "vendor": "paloalto",
