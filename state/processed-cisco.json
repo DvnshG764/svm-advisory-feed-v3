@@ -127,6 +127,14 @@
         "CVE-2026-20245"
       ],
       "finalSelectedScore": 10
+    },
+    "cisco-sa-sdwan-rpa-EHchtZk": {
+      "advisorySlug": "cisco-sa-sdwan-rpa-EHchtZk",
+      "processedAt": "2026-06-16T17:45:48.617Z",
+      "cves": [
+        "CVE-2026-20127"
+      ],
+      "finalSelectedScore": 10
     }
   }
 }
