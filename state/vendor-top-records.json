@@ -1,11 +1,11 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-clamav-88cFYyxR",
-    "fingerprint": "bf41ad3a065dca7d6bc4070c881f30493186c8e5",
+    "advisoryId": "cisco-sa-notice-vwL7b0S7",
+    "fingerprint": "cb5313d7c904f8ae05dc627a443cedbc51f03d90",
     "publishedAt": "2026-07-01",
     "updatedAt": "2026-07-01",
-    "processedAt": "2026-07-01T16:01:13.102Z"
+    "processedAt": "2026-07-01T16:15:35.772Z"
   },
   "paloalto": {
     "vendor": "paloalto",
