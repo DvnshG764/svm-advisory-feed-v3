@@ -166,6 +166,21 @@
         "CVE-2026-20191"
       ],
       "finalSelectedScore": 7.5
+    },
+    "cisco-sa-notice-vwL7b0S7": {
+      "advisorySlug": "cisco-sa-notice-vwL7b0S7",
+      "processedAt": "2026-07-01T18:01:02.816Z",
+      "cves": [
+        "CVE-2026-20191",
+        "CVE-2026-20216",
+        "CVE-2026-20213",
+        "CVE-2026-20214",
+        "CVE-2026-20215",
+        "CVE-2026-20217",
+        "CVE-2026-20243",
+        "CVE-2026-20244"
+      ],
+      "finalSelectedScore": 7.5
     }
   }
 }
