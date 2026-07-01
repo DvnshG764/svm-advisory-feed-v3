@@ -144,6 +144,28 @@
         "CVE-2026-20190"
       ],
       "finalSelectedScore": 9.1
+    },
+    "cisco-sa-clamav-88cFYyxR": {
+      "advisorySlug": "cisco-sa-clamav-88cFYyxR",
+      "processedAt": "2026-07-01T16:01:05.454Z",
+      "cves": [
+        "CVE-2026-20213",
+        "CVE-2026-20214",
+        "CVE-2026-20215",
+        "CVE-2026-20216",
+        "CVE-2026-20217",
+        "CVE-2026-20243",
+        "CVE-2026-20244"
+      ],
+      "finalSelectedScore": 7.5
+    },
+    "cisco-sa-catc-file-read-wLH2vf8X": {
+      "advisorySlug": "cisco-sa-catc-file-read-wLH2vf8X",
+      "processedAt": "2026-07-01T16:01:13.100Z",
+      "cves": [
+        "CVE-2026-20191"
+      ],
+      "finalSelectedScore": 7.5
     }
   }
 }
