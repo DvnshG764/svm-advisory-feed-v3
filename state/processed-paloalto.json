@@ -1,4 +1,44 @@
 {
   "items": {
+    "CVE-2026-0284": {
+      "advisorySlug": "CVE-2026-0284",
+      "processedAt": "2026-07-31T07:51:55.907Z",
+      "cves": [
+        "CVE-2026-0284"
+      ],
+      "finalSelectedScore": 9.9
+    },
+    "CVE-2026-0287": {
+      "advisorySlug": "CVE-2026-0287",
+      "processedAt": "2026-07-31T07:52:03.454Z",
+      "cves": [
+        "CVE-2026-0287"
+      ],
+      "finalSelectedScore": 7.5
+    },
+    "CVE-2026-0280": {
+      "advisorySlug": "CVE-2026-0280",
+      "processedAt": "2026-07-31T07:52:17.531Z",
+      "cves": [
+        "CVE-2026-0280"
+      ],
+      "finalSelectedScore": 7.2
+    },
+    "CVE-2026-0281": {
+      "advisorySlug": "CVE-2026-0281",
+      "processedAt": "2026-07-31T07:52:24.757Z",
+      "cves": [
+        "CVE-2026-0281"
+      ],
+      "finalSelectedScore": 7.1
+    },
+    "CVE-2026-0278": {
+      "advisorySlug": "CVE-2026-0278",
+      "processedAt": "2026-07-31T07:52:31.896Z",
+      "cves": [
+        "CVE-2026-0278"
+      ],
+      "finalSelectedScore": 7.8
+    }
   }
 }

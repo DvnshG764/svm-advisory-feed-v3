@@ -1,4 +1,103 @@
 {
   "items": {
+    "cisco-sa-onprem-fmc-authbypass-5JPp45V2": {
+      "advisorySlug": "cisco-sa-onprem-fmc-authbypass-5JPp45V2",
+      "processedAt": "2026-07-31T07:50:28.866Z",
+      "cves": [
+        "CVE-2026-20079"
+      ],
+      "finalSelectedScore": 10
+    },
+    "cisco-sa-sdwan-privesc-4uxFrdzx": {
+      "advisorySlug": "cisco-sa-sdwan-privesc-4uxFrdzx",
+      "processedAt": "2026-07-31T07:50:36.405Z",
+      "cves": [
+        "CVE-2026-20182",
+        "CVE-2026-20127",
+        "CVE-2026-20245"
+      ],
+      "finalSelectedScore": 10
+    },
+    "cisco-sa-notice-ILh3ZrP5": {
+      "advisorySlug": "cisco-sa-notice-ILh3ZrP5",
+      "processedAt": "2026-07-31T07:50:50.444Z",
+      "cves": [
+        "CVE-2026-20150",
+        "CVE-2026-20153",
+        "CVE-2026-20156",
+        "CVE-2026-20157",
+        "CVE-2026-20158",
+        "CVE-2026-20187",
+        "CVE-2026-20146"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "cisco-sa-hardening-roomos-AqNMbEq": {
+      "advisorySlug": "cisco-sa-hardening-roomos-AqNMbEq",
+      "processedAt": "2026-07-31T07:50:51.228Z",
+      "cves": [
+        "CVE-2026-20150",
+        "CVE-2026-20153",
+        "CVE-2026-20156",
+        "CVE-2026-20157",
+        "CVE-2026-20158",
+        "CVE-2026-20187"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "cisco-sa-ise-multi-G5WP8vv": {
+      "advisorySlug": "cisco-sa-ise-multi-G5WP8vv",
+      "processedAt": "2026-07-31T07:51:05.118Z",
+      "cves": [
+        "CVE-2026-20181",
+        "CVE-2026-20190"
+      ],
+      "finalSelectedScore": 9.1
+    },
+    "cisco-sa-catc-file-read-wLH2vf8X": {
+      "advisorySlug": "cisco-sa-catc-file-read-wLH2vf8X",
+      "processedAt": "2026-07-31T07:51:12.431Z",
+      "cves": [
+        "CVE-2026-20191"
+      ],
+      "finalSelectedScore": 7.5
+    },
+    "cisco-sa-clamav-88cFYyxR": {
+      "advisorySlug": "cisco-sa-clamav-88cFYyxR",
+      "processedAt": "2026-07-31T07:51:19.799Z",
+      "cves": [
+        "CVE-2026-20213",
+        "CVE-2026-20214",
+        "CVE-2026-20215",
+        "CVE-2026-20216",
+        "CVE-2026-20217",
+        "CVE-2026-20243",
+        "CVE-2026-20244"
+      ],
+      "finalSelectedScore": 7.5
+    },
+    "cisco-sa-notice-vwL7b0S7": {
+      "advisorySlug": "cisco-sa-notice-vwL7b0S7",
+      "processedAt": "2026-07-31T07:51:20.553Z",
+      "cves": [
+        "CVE-2026-20191",
+        "CVE-2026-20216",
+        "CVE-2026-20213",
+        "CVE-2026-20214",
+        "CVE-2026-20215",
+        "CVE-2026-20217",
+        "CVE-2026-20243",
+        "CVE-2026-20244"
+      ],
+      "finalSelectedScore": 7.5
+    },
+    "cisco-sa-cucm-ssrf-cXPnHcW": {
+      "advisorySlug": "cisco-sa-cucm-ssrf-cXPnHcW",
+      "processedAt": "2026-07-31T07:51:27.620Z",
+      "cves": [
+        "CVE-2026-20230"
+      ],
+      "finalSelectedScore": 8.6
+    }
   }
 }

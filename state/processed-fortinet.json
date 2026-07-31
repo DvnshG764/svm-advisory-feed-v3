@@ -1,4 +1,84 @@
 {
   "items": {
+    "FG-IR-26-145": {
+      "advisorySlug": "FG-IR-26-145",
+      "processedAt": "2026-07-31T07:52:40.633Z",
+      "cves": [
+        "CVE-2026-59835"
+      ],
+      "finalSelectedScore": 8.6
+    },
+    "FG-IR-25-1052": {
+      "advisorySlug": "FG-IR-25-1052",
+      "processedAt": "2026-07-31T07:52:48.249Z",
+      "cves": [
+        "CVE-2026-22153"
+      ],
+      "finalSelectedScore": 8.1
+    },
+    "FG-IR-26-141": {
+      "advisorySlug": "FG-IR-26-141",
+      "processedAt": "2026-07-31T07:52:55.655Z",
+      "cves": [
+        "CVE-2026-25089"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-136": {
+      "advisorySlug": "FG-IR-26-136",
+      "processedAt": "2026-07-31T07:53:03.493Z",
+      "cves": [
+        "CVE-2026-26083"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-123": {
+      "advisorySlug": "FG-IR-26-123",
+      "processedAt": "2026-07-31T07:53:11.208Z",
+      "cves": [
+        "CVE-2025-53844"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "FG-IR-26-121": {
+      "advisorySlug": "FG-IR-26-121",
+      "processedAt": "2026-07-31T07:53:18.607Z",
+      "cves": [
+        "CVE-2026-22828"
+      ],
+      "finalSelectedScore": 8.1
+    },
+    "FG-IR-26-100": {
+      "advisorySlug": "FG-IR-26-100",
+      "processedAt": "2026-07-31T07:53:26.648Z",
+      "cves": [
+        "CVE-2026-39808"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-112": {
+      "advisorySlug": "FG-IR-26-112",
+      "processedAt": "2026-07-31T07:53:35.316Z",
+      "cves": [
+        "CVE-2026-39813"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-076": {
+      "advisorySlug": "FG-IR-26-076",
+      "processedAt": "2026-07-31T07:53:43.981Z",
+      "cves": [
+        "CVE-2025-15467"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "FG-IR-26-082": {
+      "advisorySlug": "FG-IR-26-082",
+      "processedAt": "2026-07-31T07:53:52.063Z",
+      "cves": [
+        "CVE-2026-24017"
+      ],
+      "finalSelectedScore": 8.1
+    }
   }
 }
