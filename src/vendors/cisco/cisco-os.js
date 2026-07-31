@@ -145,6 +145,14 @@ const CISCO_OS_RULES = [
   {
     label: "Cisco CloudSec",
     patterns: [/\bcloudsec\b/i]
+  },
+  {
+    label: "Cisco FMC",
+    patterns: [/\bfirewall management center\b/i]
+  },
+  {
+    label: "Cisco RoomOS",
+    patterns: [/\broomos\b/i]
   }
 ];
 
