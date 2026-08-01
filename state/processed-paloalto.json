@@ -55,6 +55,14 @@
         "CVE-2026-0288"
       ],
       "finalSelectedScore": 7.5
+    },
+    "CVE-2026-0286": {
+      "advisorySlug": "CVE-2026-0286",
+      "processedAt": "2026-08-01T20:31:23.725Z",
+      "cves": [
+        "CVE-2026-0286"
+      ],
+      "finalSelectedScore": 7.2
     }
   }
 }
