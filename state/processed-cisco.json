@@ -98,6 +98,65 @@
         "CVE-2026-20230"
       ],
       "finalSelectedScore": 8.6
+    },
+    "cisco-sa-iosxe-bing-MGHrFAkd": {
+      "advisorySlug": "cisco-sa-iosxe-bing-MGHrFAkd",
+      "processedAt": "2026-08-05T16:16:09.624Z",
+      "cves": [
+        "CVE-2026-20263"
+      ],
+      "finalSelectedScore": 8.6
+    },
+    "cisco-sa-iosxe-snmp-dos-ZAqNm4MD": {
+      "advisorySlug": "cisco-sa-iosxe-snmp-dos-ZAqNm4MD",
+      "processedAt": "2026-08-05T16:16:16.917Z",
+      "cves": [
+        "CVE-2026-20124"
+      ],
+      "finalSelectedScore": 7.7
+    },
+    "cisco-sa-ios-xmcp-thbAr34t": {
+      "advisorySlug": "cisco-sa-ios-xmcp-thbAr34t",
+      "processedAt": "2026-08-05T16:16:24.677Z",
+      "cves": [
+        "CVE-2026-20301"
+      ],
+      "finalSelectedScore": 8.6
+    },
+    "cisco-sa-hardening-iosxe-V8NMuMZJ": {
+      "advisorySlug": "cisco-sa-hardening-iosxe-V8NMuMZJ",
+      "processedAt": "2026-08-05T16:16:38.564Z",
+      "cves": [
+        "CVE-2026-20273",
+        "CVE-2026-20267",
+        "CVE-2026-20268",
+        "CVE-2026-20269",
+        "CVE-2026-20270",
+        "CVE-2026-20271",
+        "CVE-2026-20272"
+      ],
+      "finalSelectedScore": 9.8
+    },
+    "cisco-sa-cimc-arg-inject-upSHdMfU": {
+      "advisorySlug": "cisco-sa-cimc-arg-inject-upSHdMfU",
+      "processedAt": "2026-08-05T16:16:46.569Z",
+      "cves": [
+        "CVE-2026-20200",
+        "CVE-2026-20288"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "cisco-sa-hardening-sdwan-faLcR3K": {
+      "advisorySlug": "cisco-sa-hardening-sdwan-faLcR3K",
+      "processedAt": "2026-08-05T16:16:54.229Z",
+      "cves": [
+        "CVE-2026-20303",
+        "CVE-2026-20304",
+        "CVE-2026-20310",
+        "CVE-2026-20312",
+        "CVE-2026-20313"
+      ],
+      "finalSelectedScore": 9.9
     }
   }
 }
