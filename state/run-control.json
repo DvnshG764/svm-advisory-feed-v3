@@ -1,8 +1,8 @@
 {
   "lastRun": {
-    "cisco": "2026-08-08T18:15:31.153Z",
-    "paloalto": "2026-08-08T18:15:31.305Z",
-    "fortinet": "2026-08-08T18:15:32.276Z"
+    "cisco": "2026-08-08T18:30:35.753Z",
+    "paloalto": "2026-08-08T18:30:35.849Z",
+    "fortinet": "2026-08-08T18:30:37.977Z"
   },
   "intervalMinutes": {
     "cisco": 15,
@@ -10,9 +10,9 @@
     "fortinet": 15
   },
   "runCounters": {
-    "cisco": 782,
-    "paloalto": 472,
-    "fortinet": 471
+    "cisco": 783,
+    "paloalto": 473,
+    "fortinet": 472
   },
   "forceFullScanEveryRuns": {
     "cisco": 5,
