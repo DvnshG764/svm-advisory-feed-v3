@@ -79,6 +79,22 @@
         "CVE-2026-24017"
       ],
       "finalSelectedScore": 8.1
+    },
+    "FG-IR-26-158": {
+      "advisorySlug": "FG-IR-26-158",
+      "processedAt": "2026-08-12T12:33:05.172Z",
+      "cves": [
+        "CVE-2026-26035"
+      ],
+      "finalSelectedScore": 8.8
+    },
+    "FG-IR-26-160": {
+      "advisorySlug": "FG-IR-26-160",
+      "processedAt": "2026-08-12T12:33:12.438Z",
+      "cves": [
+        "CVE-2026-70468"
+      ],
+      "finalSelectedScore": 7.3
     }
   }
 }
