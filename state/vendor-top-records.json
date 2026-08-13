@@ -1,11 +1,11 @@
 {
   "cisco": {
     "vendor": "cisco",
-    "advisoryId": "cisco-sa-notice-LDquvx5d",
-    "fingerprint": "719b454f362c39b80eed0f7a83a4ec46b85a9ac6",
-    "publishedAt": "2026-08-12",
-    "updatedAt": "2026-08-12",
-    "processedAt": "2026-08-13T20:15:32.374Z"
+    "advisoryId": "cisco-sa-clamav-WuuvVd26",
+    "fingerprint": "6172660cbe0b5e2c6abcc6aaf9585abc33caae31",
+    "publishedAt": "2026-08-13",
+    "updatedAt": "2026-08-13",
+    "processedAt": "2026-08-13T20:30:47.351Z"
   },
   "paloalto": {
     "vendor": "paloalto",
